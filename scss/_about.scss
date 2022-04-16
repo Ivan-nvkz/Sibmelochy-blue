@@ -1,0 +1,37 @@
+.about {
+   padding-bottom:30px;
+   // padding-top: 35px;
+   @include adaptiv-value("padding-top", 35, 0, 0);
+   margin-bottom: 75px;
+}
+.about__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.about__title {
+   padding-top: 10px;
+}
+.about__info {
+   @include adaptiv-value("font-size", 16, 14, 0);
+   color: #545454;
+   max-width: 553px;
+   padding-right: 10px;
+}
+// АДАПТИВ start ===================================================================================================
+@media (max-width: 1000px){
+   .about__inner{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .title-section {
+      text-align: center;
+   }
+   .about__info {
+      max-width: 100%;
+      padding-bottom: 15px;
+      padding-right: 0px;
+   }
+   .about__img{
+      width: 100%;
+   }
+}

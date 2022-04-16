@@ -1,0 +1,47 @@
+@import "reset";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "banner-section";
+@import "categories";
+@import "popular-products";
+@import "news";
+@import "about";
+@import "subscribe";
+@import "contacts";
+@import "footer";
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   // overflow: hidden;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+.footer {
+   flex: 0 0 auto;
+}
+
+.container {
+   max-width: 1420px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+body {
+   height: 100%;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   // line-height: 21.79px;
+   line-height: 1.361875;
+   background-color: #fff;
+   /* Переводим в REM  */
+   /* делим размер по макуту (16px) */
+   /* на 16 (размер шрифта по умолчанию) */
+   /* font-size: 1rem; */
+
+}

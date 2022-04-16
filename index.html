@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Сибмелочи-Синий</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="header__wrapper">
+         <header class="header">
+            <div class="header__top">
+               <div class="container">
+                  <div class="header__top-inner">
+                     <div class="header__top-address">
+                        г. Новокузнецк, ул., 25 лет Октября, д. 11
+                     </div>
+                     <div class="header__top-phone">
+                        <a class="top-phone__link" href="tel:83843744980">
+                           8 (384) 374-49-80
+                        </a>
+                     </div>
+                     <button type="button" class="icon-menu"><span></span></button>
+                  </div>
+               </div>
+            </div>
+            <div class="header__body">
+               <div class="container">
+                  <div class="header__body-inner">
+                     <a class="header__logo" href="#" data-da=".header__top-inner,1050,first">
+                        <img class="logo__img" src="images/logo.svg" alt="логотип">
+                     </a>
+                     <div class="header__body-search" data-da=".header__body,700,last">
+                        <form class="search-header" action="#">
+                           <input class="search-header__input" type="text" placeholder="Поиск">
+                           <button class="search-header__button" type="submit">
+                              <img class="search-button__img" src="images/icons/search.svg" alt="иконка поиск">
+                           </button>
+                        </form>
+                     </div>
+                     <div class="header__body-user">
+                        <ul class="body-user__list" data-da=".menu__list,400,first">
+                           <li class="user-list__item">
+                              <a class="user-list__link" href="">
+                                 <img class="user-list__img" src="images/icons/user.svg" alt="user">
+                                 <p class="user-list__text">Личный кабинет</p>
+                              </a>
+                           </li>
+                           <li class="user-list__item">
+                              <a class="user-list__link" href="">
+                                 <img class="user-list__img" src="images/icons/favorite.svg" alt="user">
+                                 <p class="user-list__text">Избранное</p>
+                              </a>
+                           </li>
+                           <li class="user-list__item">
+                              <a class="user-list__link basket" href="">
+                                 <img class="user-list__img" src="images/icons/basket.svg" alt="user">
+                                 <p class="user-list__text">Корзина</p>
+                                 <span class="basket__num">33</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header__bottom">
+               <div class="container">
+                  <div class="header__bottom-inner">
+                     <div class="header__catalog" data-da=".menu__list,700,last">
+                        <div class="catalog__btn-inner">
+                           <button type="button" class="catalog__btn"><span class="catalog__btn-line"></span></button>
+                        </div>
+                        <div class="catalog">
+                           <button type="button" class="catalog__btn-push">КАТАЛОГ</button>
+                        </div>
+                     </div>
+                     <nav class="menu">
+                        <ul class="menu__list" data-da=".header__top-inner,700,last">
+                           <li class="menu__item">
+                              <a class="menu__link" href="#">
+                                 новости
+                              </a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="#">
+                                 доставка
+                              </a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="#">
+                                 оплата
+                              </a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="#">
+                                 О нас
+                              </a>
+                           </li>
+                           <li class="menu__item">
+                              <a class="menu__link" href="#">
+                                 Контакты
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__inner">
+               <div class="catalog__body">
+                  <div class=" container">
+                     <ul class="catalog__list">
+                        <li class="catalog__item">
+                           <a class="catalog__link" href="#">ТОВАРЫ ДЛЯ КУХНИ</a>
+                           <a class="catalog__link" href="#">ХОЗТОВАРЫ</a>
+                           <a class="catalog__link" href="#">КАНЦЕЛЯРИЯ</a>
+                           <a class="catalog__link" href="#">ДЕТСКОЕ ТВОРЧЕСТВО</a>
+                           <a class="catalog__link" href="#">НОВОГОДНИЕ ТОВАРЫ</a>
+                           <a class="catalog__link" href="#">БАНЯ И САУНА</a>
+                           <a class="catalog__link" href="#">ГАЛАНТЕРЕЯ</a>
+                        </li>
+                        <li class="catalog__item">
+                           <a class="catalog__link" href="#">БЫТОВАЯ ТЕХНИКА </a>
+                           <a class="catalog__link" href="#"> СУВЕНИРЫ</a>
+                           <a class="catalog__link" href="#">САНТЕХНИКА</a>
+                           <a class="catalog__link" href="#">ДЕТСКОЕ ТВОРЧЕСТВО</a>
+                           <a class="catalog__link" href="#">ТУРИЗМ И СПОРТ</a>
+                           <a class="catalog__link" href="#">ЭЛЕКТРОТОВАРЫ</a>
+                           <a class="catalog__link" href="#">БЫТОВАЯ ХИМИЯ</a>
+                           <a class="catalog__link" href="#">ИНСТРУМЕНТЫ</a>
+                        </li>
+                        <li class="catalog__item">
+                           <a class="catalog__link" href="#">ЭЛЕКТРО/БЕНЗО ИНСТРУМЕНТ </a>
+                           <a class="catalog__link" href="#">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a>
+                           <a class="catalog__link" href="#">АВТОТОВАРЫ</a>
+                           <a class="catalog__link" href="#">САМОГОНОВАРЕНИЕ</a>
+                           <a class="catalog__link" href="#">САДОВО-ОГОРОДНОЕ</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+      </div>
+      </header>
+
+      <main class="main">
+
+         <section class="banner-section">
+            <div class="container">
+               <div class="banner-section__inner">
+                  <div class="banner-section__slider">
+                     <div class="swiper banner-slider">
+                        <div class="swiper-wrapper banner-slider__wrapper">
+                           <div class="swiper-slide banner-slide">
+                              <div class="banner-slide__inner">
+                                 <div class="banner-slide__action">
+                                    <h4 class="title-action">
+                                       <a class="action__link" href="#">АКЦИЯ</a>
+                                    </h4>
+                                    <p class="discounts">
+                                       С 01.04 по 31.04 апреля
+                                       скидка 30% на наборы
+                                       инструментов
+                                    </p>
+                                    <div class="more-block">
+                                       <a class="more-block__link" href="#">
+                                          Подробнее
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="banner-slide__picture">
+                                    <img class="banner-img" src="images/slider-banner/1.png" alt="картинка инструменты">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide banner-slide">
+                              <div class="banner-slide__inner">
+                                 <div class="banner-slide__action">
+                                    <h4 class="title-action">
+                                       <a class="action__link" href="#">АКЦИЯ</a>
+                                    </h4>
+                                    <p class="discounts">
+                                       С 01.04 по 31.04 апреля
+                                       скидка 30% на наборы
+                                       инструментов
+                                    </p>
+                                    <div class="more-block">
+                                       <a class="more-block__link" href="#">
+                                          Подробнее
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="banner-slide__picture">
+                                    <img class="banner-img" src="images/slider-banner/1.png" alt="картинка инструменты">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide banner-slide">
+                              <div class="banner-slide__inner">
+                                 <div class="banner-slide__action">
+                                    <h4 class="title-action">
+                                       <a class="action__link" href="#">АКЦИЯ</a>
+                                    </h4>
+                                    <p class="discounts">
+                                       С 01.04 по 31.04 апреля
+                                       скидка 30% на наборы
+                                       инструментов
+                                    </p>
+                                    <div class="more-block">
+                                       <a class="more-block__link" href="#">
+                                          Подробнее
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="banner-slide__picture">
+                                    <img class="banner-img" src="images/slider-banner/1.png" alt="картинка инструменты">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide banner-slide">
+                              <div class="banner-slide__inner">
+                                 <div class="banner-slide__action">
+                                    <h4 class="title-action">
+                                       <a class="action__link" href="#">АКЦИЯ</a>
+                                    </h4>
+                                    <p class="discounts">
+                                       С 01.04 по 31.04 апреля
+                                       скидка 30% на наборы
+                                       инструментов
+                                    </p>
+                                    <div class="more-block">
+                                       <a class="more-block__link" href="#">
+                                          Подробнее
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="banner-slide__picture">
+                                    <img class="banner-img" src="images/slider-banner/1.png" alt="картинка инструменты">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-button-prev banner-button-prev"></div>
+                        <div class="swiper-button-next banner-button-next"></div>
+                     </div>
+                     <div class="pagination-box">
+                        <div class="swiper-pagination swiper-pagination-one"></div>
+                     </div>
+                  </div>
+                  <div class="banner-section__items">
+                     <div class="banner-section__item">
+                        <h4 class="title-action title__banner-section">
+                           <a class="action__link banner-section__link" href="#">
+                              Грунты
+                              и удобрения
+                           </a>
+                        </h4>
+                        <div class="more-block">
+                           <a class="more-block__link" href="#">
+                              Подробнее
+                           </a>
+                        </div>
+                     </div>
+                     <div class="banner-section__item banner-section__item-two">
+                        <h4 class="title-action title__banner-section">
+                           <a class="action__link banner-section__link" href="#">
+                              Товары
+                              для кухни
+                           </a>
+                        </h4>
+                        <div class="more-block">
+                           <a class="more-block__link" href="#">
+                              Подробнее
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <div class="categories">
+            <div class="container">
+               <div class="categories__inner">
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        Товары для кухни
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        ИНСТРУМЕНТЫ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        КАНЦЕЛЯРИЯ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        АВТОТОВАРЫ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        ЭЛЕКТРОТОВАРЫ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        ГАЛАНТЕРЕЯ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        БЫТОВАЯ ТЕХНИКА
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        СУВЕНИРЫ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        ТУРИЗМ И СПОРТ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        САНТЕХНИКА
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text">
+                        БЫТОВАЯ ХИМИЯ
+                     </p>
+                  </a>
+                  <a class="categories__item" href="#">
+                     <p class="categories__item-text categories__item-text--white">
+                        Все категории
+                     </p>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <section class="popular-products">
+            <div class="container">
+               <div class="popular-products__inner">
+                  <h3 class="popular-products__title title-section">
+                     Популярные товары
+                  </h3>
+                  <div class="popular-products__slider">
+                     <div class="swiper popular__slider">
+                        <div class="swiper-wrapper popular__slider-wrapper">
+                           <div class="swiper-slide popular__slide ">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button"
+                                          class="popular-item__favorite  popular-item__favorite--active"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color1">Хит</button>
+                                       <a class="popular-item__link " href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/1.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Термометр уличный бытовой <br>
+                                                CH089-1 CF
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price ">
+                                             150,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide ">
+                              <div class="  popular__slide-item">
+                                 <div class="  popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color2"></button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/2.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Лейка для комнатных <br> растений 1,4л
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price  ">
+                                             84,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide ">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color3">Скидка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/3.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Ножовка по металлу 300мм алюм. ручка квадрат. рама KAKU
+                                             </a>
+                                          </h4>
+                                          <div class="price-box card__title">
+                                             <p class="price popular-item__price popular-item__price-new ">
+                                                230 ₽
+                                             </p>
+                                             <p class="price popular-item__price new-prise">
+                                                205,00 ₽
+                                             </p>
+                                          </div>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide ">
+                              <div class="  popular__slide-item">
+                                 <div class="  popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/4.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Перчатки Х/Б белые с 1-слойн. латекс. покр (уп. 10пар)
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price  ">
+                                             265,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide ">
+                              <div class="  popular__slide-item">
+                                 <div class="  popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button"
+                                          class="popular-item__favorite popular-item__favorite--active"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color5"></button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/5.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Клей-гель Супер Момент для обуви
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price  ">
+                                             150,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide ">
+                              <div class="  popular__slide-item">
+                                 <div class="  popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color6">Акция</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-popular/6.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Бульонница стекло 600мл с ручкой
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price  ">
+                                             175,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="products__button-box">
+                        <div class="button-box__inner">
+                           <div class="products__button-prev"></div>
+                           <div class="products__button-next"></div>
+                           <a class="view__btn" href="#">Смотреть все</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="new-products">
+            <div class="container">
+               <div class="popular-products__inner">
+                  <h3 class="new-products__title title-section">
+                     Новинки
+                  </h3>
+                  <div class="new-products__slider">
+                     <div class="swiper   new-slider ">
+                        <div class="swiper-wrapper popular__slider-wrapper ">
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/1.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Ящик для рассады пласт. 640х140х100мм терракот.
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             89,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button"
+                                          class="popular-item__favorite popular-item__favorite--active"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/2.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Тачка садовая 1 колесн. 60л 45кг
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             1 749,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite "></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/3.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Кипятильник 1500 Вт IR-9005
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             189,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/4.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Органайзер настол. 4 отдел. Имидж черный СТАММ
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             189,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/5.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Звонок дверн. беспровод. 32мел. на бат. белый FORZA
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             725,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide popular__slide">
+                              <div class="popular__slide-item">
+                                 <div class="popular-item__wrapper card__content">
+                                    <div class="content-body">
+                                       <button type="button" class="popular-item__favorite"></button>
+                                       <button
+                                          class="popular-item__variable-btn popular-item__variable-btn--color4">Новинка</button>
+                                       <a class="popular-item__link" href="#">
+                                          <img class="popular-item__img" src="images/slider-new-products/6.png"
+                                             alt="изображение термометра">
+                                       </a>
+                                       <div class="card__title-box">
+                                          <h4 class="popular-item__title card__title">
+                                             <a class="popular-item__title-link" href="#">
+                                                Грунт Универсальный 20л Садовая земля
+                                             </a>
+                                          </h4>
+                                          <p class="price popular-item__price">
+                                             95,00 ₽
+                                          </p>
+                                       </div>
+                                       <button class="popular-item__basket">
+                                          <!-- <img class="basket__img" src="images/icons/basket-card.svg"
+                                             alt="иконка корзина"> -->
+                                          <svg width="47" height="45" viewBox="0 0 47 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <rect width="47" height="45" rx="8" fill="#0092DD" />
+                                             <path
+                                                d="M17 26C16.7661 26.0047 16.5379 25.9272 16.3551 25.7811C16.1724 25.6349 16.0468 25.4293 16 25.2L13.66 13.41C13.5237 12.7305 13.1564 12.1192 12.6205 11.6799C12.0845 11.2406 11.413 11.0003 10.72 11H9C8.73478 11 8.48043 10.8946 8.29289 10.7071C8.10536 10.5196 8 10.2652 8 10C8 9.73478 8.10536 9.48043 8.29289 9.29289C8.48043 9.10536 8.73478 9 9 9H10.72C11.8727 8.99976 12.99 9.39778 13.8829 10.1267C14.7758 10.8556 15.3895 11.8706 15.62 13L18 24.8C18.0291 24.9315 18.0312 25.0676 18.0064 25.1999C17.9816 25.3323 17.9303 25.4583 17.8556 25.5704C17.7809 25.6825 17.6843 25.7783 17.5716 25.8521C17.459 25.9259 17.3326 25.9762 17.2 26H17Z"
+                                                fill="white" />
+                                             <path
+                                                d="M17.9998 33H16.1398C15.0791 32.9934 14.0615 32.5801 13.2968 31.8451C12.532 31.1102 12.0785 30.1098 12.0298 29.0503C11.981 27.9908 12.3408 26.953 13.0348 26.151C13.7289 25.349 14.7042 24.8439 15.7598 24.74L34.1698 23.07L35.7798 15H14.9998C14.7345 15 14.4802 14.8946 14.2926 14.7071C14.1051 14.5196 13.9998 14.2652 13.9998 14C13.9998 13.7348 14.1051 13.4804 14.2926 13.2929C14.4802 13.1054 14.7345 13 14.9998 13H36.9998C37.1475 13.001 37.2931 13.0347 37.4263 13.0986C37.5594 13.1626 37.6767 13.2553 37.7698 13.37C37.8675 13.4825 37.9389 13.6154 37.9787 13.759C38.0185 13.9026 38.0257 14.0533 37.9998 14.2L35.9998 24.2C35.9575 24.4115 35.848 24.6037 35.6876 24.7478C35.5272 24.892 35.3245 24.9805 35.1098 25L15.9398 26.74C15.3748 26.7665 14.8436 27.0164 14.4629 27.4346C14.0822 27.8528 13.8832 28.4051 13.9098 28.97C13.9363 29.5349 14.1861 30.0661 14.6043 30.4468C15.0225 30.8275 15.5748 31.0265 16.1398 31H17.9998C18.265 31 18.5193 31.1054 18.7069 31.2929C18.8944 31.4804 18.9998 31.7348 18.9998 32C18.9998 32.2652 18.8944 32.5196 18.7069 32.7071C18.5193 32.8946 18.265 33 17.9998 33Z"
+                                                fill="white" />
+                                             <path
+                                                d="M33 36C32.2089 36 31.4355 35.7654 30.7777 35.3259C30.1199 34.8864 29.6072 34.2616 29.3045 33.5307C29.0017 32.7998 28.9225 31.9956 29.0769 31.2196C29.2312 30.4437 29.6122 29.731 30.1716 29.1716C30.731 28.6122 31.4437 28.2312 32.2196 28.0769C32.9956 27.9225 33.7998 28.0017 34.5307 28.3045C35.2616 28.6072 35.8864 29.1199 36.3259 29.7777C36.7654 30.4355 37 31.2089 37 32C37 33.0609 36.5786 34.0783 35.8284 34.8284C35.0783 35.5786 34.0609 36 33 36ZM33 30C32.6044 30 32.2178 30.1173 31.8889 30.3371C31.56 30.5568 31.3036 30.8692 31.1522 31.2346C31.0009 31.6001 30.9613 32.0022 31.0384 32.3902C31.1156 32.7781 31.3061 33.1345 31.5858 33.4142C31.8655 33.6939 32.2219 33.8844 32.6098 33.9616C32.9978 34.0387 33.3999 33.9991 33.7654 33.8478C34.1308 33.6964 34.4432 33.44 34.6629 33.1111C34.8827 32.7822 35 32.3956 35 32C35 31.4696 34.7893 30.9609 34.4142 30.5858C34.0391 30.2107 33.5304 30 33 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M21 36C20.2089 36 19.4355 35.7654 18.7777 35.3259C18.1199 34.8864 17.6072 34.2616 17.3045 33.5307C17.0017 32.7998 16.9225 31.9956 17.0769 31.2196C17.2312 30.4437 17.6122 29.731 18.1716 29.1716C18.731 28.6122 19.4437 28.2312 20.2196 28.0769C20.9956 27.9225 21.7998 28.0017 22.5307 28.3045C23.2616 28.6072 23.8864 29.1199 24.3259 29.7777C24.7654 30.4355 25 31.2089 25 32C25 33.0609 24.5786 34.0783 23.8284 34.8284C23.0783 35.5786 22.0609 36 21 36ZM21 30C20.6044 30 20.2178 30.1173 19.8889 30.3371C19.56 30.5568 19.3036 30.8692 19.1522 31.2346C19.0009 31.6001 18.9613 32.0022 19.0384 32.3902C19.1156 32.7781 19.3061 33.1345 19.5858 33.4142C19.8655 33.6939 20.2219 33.8844 20.6098 33.9616C20.9978 34.0387 21.3999 33.9991 21.7654 33.8478C22.1308 33.6964 22.4432 33.44 22.6629 33.1111C22.8827 32.7822 23 32.3956 23 32C23 31.4696 22.7893 30.9609 22.4142 30.5858C22.0391 30.2107 21.5304 30 21 30Z"
+                                                fill="white" />
+                                             <path
+                                                d="M30 33H24C23.7348 33 23.4804 32.8946 23.2929 32.7071C23.1054 32.5196 23 32.2652 23 32C23 31.7348 23.1054 31.4804 23.2929 31.2929C23.4804 31.1054 23.7348 31 24 31H30C30.2652 31 30.5196 31.1054 30.7071 31.2929C30.8946 31.4804 31 31.7348 31 32C31 32.2652 30.8946 32.5196 30.7071 32.7071C30.5196 32.8946 30.2652 33 30 33Z"
+                                                fill="white" />
+                                          </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="products__button-box">
+                        <div class="button-box__inner">
+                           <div class="new-products__button-prev"></div>
+                           <div class="new-products__button-next"></div>
+                           <a class="view__btn" href="#">Смотреть все</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="news">
+            <div class="container">
+               <div class="news__inner">
+                  <h3 class="news__title title-section">
+                     Новости
+                  </h3>
+                  <div class="news-slider__inner">
+                     <div class="swiper   news-slider ">
+                        <div class="swiper-wrapper news-wrapper">
+                           <div class="swiper-slide news__slide">
+                              <div class="news__slide-item">
+                                 <div class="news__wrapper">
+                                    <div class="news-box">
+                                       <div class="news-box__items">
+                                          <div class="news-box__item">
+                                             <img class="news-box__img" src="images/news/1.png"
+                                                alt="изображение рассады">
+                                             <a class="news-box__text-link" href="#">
+                                                <p class="news-box__text">
+                                                   Новое поступление товара для сада и огорода
+                                                </p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide news__slide">
+                              <div class="news__slide-item">
+                                 <div class="news__wrapper">
+                                    <div class="news-box">
+                                       <div class="news-box__items">
+                                          <div class="news-box__item">
+                                             <img class="news-box__img" src="images/news/2.png"
+                                                alt="изображение рассады">
+                                             <a class="news-box__text-link" href="#">
+                                                <p class="news-box__text">
+                                                   В наличии разнообразный инструмент для домашнего мастера
+                                                </p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide news__slide">
+                              <div class="news__slide-item">
+                                 <div class="news__wrapper">
+                                    <div class="news-box">
+                                       <div class="news-box__items">
+                                          <div class="news-box__item">
+                                             <img class="news-box__img" src="images/news/3.png"
+                                                alt="изображение рассады">
+                                             <a class="news-box__text-link" href="#">
+                                                <p class="news-box__text">
+                                                   Скидка на грунты для садовых и комнатных растений
+                                                </p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide news__slide">
+                              <div class="news__slide-item">
+                                 <div class="news__wrapper">
+                                    <div class="news-box">
+                                       <div class="news-box__items">
+                                          <div class="news-box__item">
+                                             <img class="news-box__img" src="images/news/4.png"
+                                                alt="изображение рассады">
+                                             <a class="news-box__text-link" href="#">
+                                                <p class="news-box__text">
+                                                   Новое поступление стильных светодиодных лампочек
+                                                </p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="products__button-box">
+                           <div class="button-box__inner">
+                              <div class="news__button-prev"></div>
+                              <div class="news__button-next"></div>
+                              <a class="view__btn view__btn-news" href="#">Читать все</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+
+         <section class="about">
+            <div class="container">
+               <div class="about__inner">
+                  <div class="about-box">
+                     <h3 class="about__title title-section">
+                        О нас
+                     </h3>
+                     <p class="about__info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                     </p>
+                  </div>
+                  <img class="about__img" src="images/abaut-img.jpg" alt="изображение товара на полках магазина">
+               </div>
+            </div>
+         </section>
+
+         <section class="subscribe">
+            <div class="container">
+               <div class="subscribe__inner">
+                  <div class="subscribe__wrapper">
+                     <div class="subscribe__body">
+                        <h3 class="subscribe__title title-section">
+                           Подпишитесь на обновления
+                        </h3>
+                        <p class="subscribe__info">
+                           Оставьте свой e-mail и будьте в курсе наших актуальных акций,
+                           спецпердложений и новостей.
+                        </p>
+                     </div>
+                     <div class="mail-box">
+                        <form class="form" action="#">
+                           <input class="subscribe__input" type="text" placeholder="Введите свой e-mail">
+                           <button class="subscribe__btn" type="submit">Подписаться</button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="subscribe__images">
+                     <img class="subscribe__img" src="images/subscribe-img.png" alt="изображение громкоговорителя">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="contacts">
+            <div class="container">
+               <div class="contacts__inner">
+                  <h3 class="contacts__title title-section">
+                     Контакты
+                  </h3>
+                  <div class="contacts__body">
+                     <div class="address__box">
+                        <p class="contacts__address">
+                           ООО «Сибмелочи»
+                           Кемеровская область,
+                           г. Новокузнецк,
+                           ул.
+                           25 лет Октября, д.11
+                        </p>
+                        <ul class="contacts__list">
+                           <li class="contacts__list-item">
+                              <a class="contacts__phone" href="tel:83843744980">
+                                 8 (384) 374-49-80
+                              </a>
+                           </li>
+                           <li class="contacts__list-item">
+                              <a class="contacts__mail" href="mailto:info@tysyacha-melochey.ru">
+                                 info@tysyacha-melochey.ru
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="map-page">
+                        <div id="map"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer-top">
+                  <a class="footer__logo" href="#">
+                     <img class="logo__img footer-logo__img" src="images/logo.svg" alt="логотип">
+                  </a>
+                  <div class="footer-top__blocks">
+                     <div class="footer-top__block">
+                        <ul class="footer-menu__list">
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">Каталог</a>
+                           </li>
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">Новости</a>
+                           </li>
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">О нас</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="footer-top__block">
+                        <ul class="footer-menu__list">
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">доставка</a>
+                           </li>
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">оплата</a>
+                           </li>
+                           <li class="footer-menu__item">
+                              <a class="footer-menu__link" href="#">Контакты</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer-top__social">
+                     <div class="footer-top__phone">
+                        <a class="footer-top__phone-link" href="tel:83843744980">8 (384) 374-49-80</a>
+                     </div>
+                     <div class="social__body">
+                        <ul class="social__list">
+                           <li class="social__item">
+                              <a class="social__link" href="#">
+                                 <img class="social__img" src="images/icons/social-vk-blue.svg" alt="vk">
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="#">
+                                 <img class="social__img" src="images/icons/social-ok-blue.svg" alt="ok">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-bottom">
+                  <div class="footer-bottom__inner">
+                     <p class="description">
+                        © 2022 СибМелочи <br>
+                        <a class="description__link" href="#">Политика конфиденциальности</a>
+                     </p>
+                     <p class="description description-copy">
+                        <a class="description__link-copy" href="#">Разработка сайта: DevStarter</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>

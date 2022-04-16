@@ -1,0 +1,73 @@
+.contacts {
+   margin-bottom: 50px;
+   // @include adaptiv-value("margin-bottom", 50, 0, 0);
+}
+.contacts__title {
+   padding-left: 30px;
+}
+.address__box {
+   padding-left: 30px;
+   padding-bottom: 30px;
+   display: flex;
+}
+.contacts__address {
+   max-width: 188px;
+   font-family: 'Open Sans';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.375;
+   color: #545454;
+   margin-right: 137px;
+   @include adaptiv-value("margin-right", 137, 30, 0);
+}
+.contacts__phone, 
+.contacts__mail {
+   font-family: 'Open Sans';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.375;
+   color: #545454;
+   transition: all 0.3s;
+}
+.contacts__phone:hover, 
+.contacts__mail:hover{
+   color: #000;
+   transition: all 0.3s;
+   border-bottom: 1px solid #000;
+}
+#map{
+   height: 500px;
+}
+// АДАПТИВ start ===================================================================================================
+@media (max-width: 500px){
+   .address__box {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+   }
+   .contacts__title {
+      padding-left: 0px;
+   }
+}
+@media (max-width: 460px){
+   .address__box {
+      display: flex;
+      flex-wrap: wrap;
+     margin: 0 60px;
+   }
+   .contacts__address{
+      margin-bottom: 35px;
+     text-align: center;
+     min-width: 100%;
+     margin-right: 0;
+   }
+   .contacts__list{
+      width: 100%;
+   }
+   .contacts__list-item {
+      text-align: center;
+   }
+   #map{
+      height: 300px;
+   }
+}
