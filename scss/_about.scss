@@ -1,7 +1,7 @@
 .about {
    padding-bottom:30px;
    // padding-top: 35px;
-   @include adaptiv-value("padding-top", 35, 0, 0);
+   @include adaptiv-value("padding-top", 31, 0, 0);
    margin-bottom: 75px;
 }
 .about__inner {
@@ -9,13 +9,16 @@
    justify-content: space-between;
 }
 .about__title {
-   padding-top: 10px;
+   padding-top: 0px;
 }
 .about__info {
    @include adaptiv-value("font-size", 16, 14, 0);
    color: #545454;
-   max-width: 553px;
+   max-width: 587px;
+   padding-left: 22px;
+   padding-top: 11px;
    padding-right: 10px;
+   line-height: 1.375;
 }
 // АДАПТИВ start ===================================================================================================
 @media (max-width: 1000px){
@@ -30,8 +33,24 @@
       max-width: 100%;
       padding-bottom: 15px;
       padding-right: 0px;
+      padding-left: 0;
    }
    .about__img{
       width: 100%;
+   }
+}
+@media (max-width: 320px){
+   .about__title {
+      padding-top: 20px;
+      padding-bottom: 6px;
+   }
+   .about__img{
+      min-height: 230px;
+   }
+   .about__info{
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 30px;
+      min-width: 271px;
    }
 }

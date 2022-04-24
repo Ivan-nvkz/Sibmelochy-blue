@@ -234,7 +234,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-   bottom: 10px;
+   bottom: -10px;
    left: 0;
    width: 100%;
 }
