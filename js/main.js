@@ -2,6 +2,79 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   // Фильтр ==========================
+   // let btnGrid = document.querySelector('.catalog__filter-btngrid');
+   // let btnLine = document.querySelector('.catalog__filter-btnline');
+   // let catologSlides = document.querySelectorAll('.catolog__slide');
+   // let popularSlideItems = document.querySelectorAll('.popular__slide-item');
+   // let popularItemTitles = document.querySelectorAll('.popular-item__title');
+   // let popularItemImages = document.querySelectorAll('.popular-item__img');
+   // // let catologBodyList = document.querySelector('.catolog__body-list');
+   // let catologBody = document.querySelector('.catolog__body');
+
+
+   // btnGrid.addEventListener('click', function () {
+   //    btnGrid.classList.add('catalog__filter-button--active');
+   //    btnLine.classList.remove('catalog__filter-button--active');
+
+
+
+   //    catologSlides.forEach(elem => {
+   //       // elem.style.minWidth = '235px';
+   //       elem.style.width = '235px';
+   //    });
+
+   //    popularSlideItems.forEach(elem => {
+   //       elem.style.width = '235px';
+   //       elem.style.display = 'flex';
+   //       elem.style.justifyContent = 'space-between';
+   //    });
+
+   //    popularItemTitles.forEach(elem => {
+   //       elem.style.maxWidth = '178px';
+   //    });
+
+   //    popularItemImages.forEach(elem => {
+   //       elem.style.minWidth = '208px';
+   //    });
+
+   //    // catologBodyList.style.display = 'flex';
+   //    // catologBodyList.style.flexWrap = 'wrap';
+   //    // catologBodyList.style.justifyContent = 'space-between';
+
+   // });
+
+   // btnLine.addEventListener('click', function () {
+
+   //    btnGrid.classList.remove('catalog__filter-button--active');
+   //    btnLine.classList.add('catalog__filter-button--active');
+
+   //    catologSlides.forEach(elem => {
+   //       elem.style.width = '100%';
+   //    });
+
+   //    popularSlideItems.forEach(elem => {
+   //       elem.style.width = '100%';
+   //    });
+
+   //    popularItemTitles.forEach(elem => {
+   //       elem.style.minWidth = '100%';
+   //    });
+
+   //    popularItemImages.forEach(elem => {
+   //       elem.style.marginLeft = 'auto';
+   //       elem.style.marginRight = 'auto';
+   //    });
+
+   // });
+
+
+
+
+
+   // console.log();
+   // console.log();
+   // Фильтр ==========================
 
    // АККОРДЕОН start ==========================================================================
    // let btns = document.querySelectorAll('.accordeon-btn');

@@ -10,9 +10,10 @@
 @import "subscribe";
 @import "contacts";
 @import "footer";
-// @import "tabs";
 @import "spollers";
-// @import "accordion";
+@import "breadcrumbs";
+@import "kitchen-products";
+
 
 .wrapper {
    display: flex;
@@ -32,6 +33,7 @@
    max-width: 1420px;
    padding: 0 10px;
    margin: 0 auto;
+   
 }
 
 body {
