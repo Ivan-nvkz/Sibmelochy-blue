@@ -2,6 +2,36 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+   // Пагинация ==========================
+   // const paginationItems = document.querySelectorAll('.pagination-list-item');
+
+   // paginationItems.forEach(elem => {
+
+   //    elem.addEventListener('click', function (e) {
+
+   //       e.preventDefault();
+
+   // if (elem.classList.contains('pagination-list-item--active')) {
+
+   //    elem.classList.remove('pagination-list-item--active');
+   //    elem.elem.classList.add('pagination-list-item');
+
+   // }
+   // else if (elem.classList.contains('pagination-list-item')) {
+
+   //    elem.classList.add('pagination-list-item--active');
+   //    elem.elem.classList.remove('pagination-list-item');
+   // }
+
+
+
+   //    });
+
+   // });
+
+   // console.log(paginationItems);
+   // Пагинация ==========================
+
 
    // Фильтр ==========================
    const btnGrid = document.querySelector('.catalog__filter-btngrid ');
@@ -12,16 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
    let popularItemImages = document.querySelectorAll('.popular-item__img');
    let catologBody = document.querySelector('.catolog__body');
    let catalogFilter = document.querySelector('.catalog__filter');
-   // =================
 
    const catologBodytWidth = catologBody.clientWidth;
-
-   console.log(catologBodytWidth);
    console.log();
-   // ==================
-
+   console.log();
    // const catologBodyWidth = catologBody.getBoundingClientRect().width;
-
 
    if (catologBodytWidth >= 475) {
 
@@ -79,16 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       });
 
-
-
    } else if (catologBodytWidth <= 475) {
       catalogFilter.classList.remove('catalog__filter');
       catalogFilter.classList.add('catalog__filter--none');
-
    }
-
-
-
 
    console.log();
    console.log();
